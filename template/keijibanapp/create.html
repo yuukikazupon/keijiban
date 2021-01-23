@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- {{ request.user }}{{ object_list.created_at } -->
+
+<form action = "" method ="POST">{% csrf_token %}
+{{ keijiban }}
+{{ createform.as_p }}
+<input type = "submit" value = "投稿">
+</form>
+
+
+{% endblock %}
